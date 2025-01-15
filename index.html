@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFFIK MUKHLIS</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: #333;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease, background 0.5s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            background-blend-mode: overlay;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        section img {
+            max-width: 30%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        section img:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Custom Backgrounds for Each Section */
+        #home {
+            background-image: url('bola1.jpeg');
+        }
+
+        #about {
+            background-image: url('bola4.jpeg');
+        }
+
+        #gallery {
+            background-image: url('bola3.jpeg');
+        }
+
+        #experience {
+            background-image: url('bola2.jpeg');
+        }
+
+        #contact {
+            background-image: url('bola 5.jpeg');
+        }
+
+        /* Keyframes for Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SAFFIK MUKHLIS</h1>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#gallery">MY GALLERY</a>
+            <a href="#experience">MY EXPERIENCE</a>
+            <a href="#contact">CONTACT ME</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <img src="ood1.jpeg" alt="Home Section Image">
+            <h2>Welcome to My Colaj</h2>
+            <p>THE LOCATION IS ALL ABOUT ME!</p>
+        </section>
+
+        <section id="about">
+            <img src="konsert1.jpeg" alt="About Section Image">
+            <h2>About Me</h2>
+            <p>Hi, I'm Saffik Mukhlis and I'm a student from Universiti Teknologi Mara (UITM) Kelantan. I'm 20 years old and a student majoring in Information Management. Want to know more about me, let's check it up!</p>
+        </section>
+
+        <section id="gallery" class="image-gallery">
+            <h2>My Gallery</h2>
+            <img src="ood5.jpeg" alt="Gallery Image 1">
+            <img src="ood3.jpeg" alt="Gallery Image 2">
+            <img src="ood2.jpeg" alt="Gallery Image 3">
+            <img src="oo4.jpeg" alt="Gallery Image 4">
+        </section>
+
+        <section id="experience">
+            <img src="bazaar.jpeg" alt="Experience Section Image">
+            <h2>My Experience</h2>
+            <p>I used to work at the Ramadhan bazaar to gain a little experience in business and also earn my own money..</p>
+        </section>
+
+        <section id="contact">
+            <img src="bola6.jpeg" alt="Contact Section Image">
+            <h2>Contact Me</h2>
+            <p>Have a question? You can send an email to <a href="mailto:kojieapik@gmail.com">kojieapik@gmail.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Just Kojie do Kojie Things</p>
+    </footer>
+</body>
+</html>
